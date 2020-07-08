@@ -1,8 +1,10 @@
 # Python-File-Management
 Basics of OS module in python and files sorting techniques
 
-# Reference : https://www.youtube.com/watch?v=tJxcKyFMTGo
+# Reference
+- Corey Schafer : https://www.youtube.com/watch?v=tJxcKyFMTGo
 
+# Notes 
 The OS module allows us to interact wiht the underlying operating system in several different ways.
 
 - Navigate the file system
@@ -27,17 +29,17 @@ os.listdir()
 
 
 # Multiple options for creating directories
-mkdir()  # Use for making one directory
-makedirs(). # Use if you want to create multiple directories at once
+- mkdir() : Use for making one directory
+- makedirs() : Use if you want to create multiple directories at once
 
 
 # Remove directories
-rmdir(file). # Recommended use case
-removedirs(file)  # Removes intermediate directories if specified
+- rmdir(file) : Recommended use case
+- removedirs(file) : Removes intermediate directories if specified
 
 
 # Rename a file or folder
-os.rename(‘test.txt’, ‘demo.txt’). # This renames text.txt to demo.txt
+os.rename(‘test.txt’, ‘demo.txt’) : This renames text.txt to demo.txt
 
 
 # Look at info about files
