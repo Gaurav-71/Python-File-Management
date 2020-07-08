@@ -46,14 +46,7 @@ os.stat(test.txt)
 
 
 # To see entire directory tree and files within
- - os.walk is a generator that yields a tuple of 3 values as it walks the directory tree
-
-for dirpath, dirnames, filenames in os.walk(routepath): 
-    print(‘Current Path:’, dirpath)
-    print(‘Directories:’, dirnames)
-    print(‘Files:’, filenames)
-    print()
-
+- os.walk is a generator that yields a tuple of 3 values as it walks the directory tree
 - This is useful for locating a file that you can’t remember where it was
 - If you had a web app, and you wanted to keep track of the file info within a certain directory structure, then you could to thru the os.walk method and go thru all files and folders and collect file information.
 
@@ -65,26 +58,26 @@ os.environ.get(‘HOME’). # Returns a path
 file_path = os.path.join(os.environ.get(‘HOME’), ‘test.txt’)
 - the benefit of os.path.join, is it takes the guess work out of inserting a slash
 
-### os.path has other useful methods
-# os.path.basename
+# os.path has other useful methods
+### os.path.basename
 - This will grab filename of any path we are working on
 
-# os.path.dirname(‘/tmp/test.txt’)
+### os.path.dirname(‘/tmp/test.txt’)
 - returns the directory /tmp
 
-# os.path.split(‘/tmp/test.txt’)
+### os.path.split(‘/tmp/test.txt’)
 - returns both the directory and the file as a tuple
 
-# os.path.exists(‘/tmp/test.txt’)
+### os.path.exists(‘/tmp/test.txt’)
 - returns a boolean
 
-# os.path.isdir(‘/tmp/test.txt’)
+### os.path.isdir(‘/tmp/test.txt’)
 - returns False
 
-# os.path.isfile(‘/tmp/test.txt’)
+### os.path.isfile(‘/tmp/test.txt’)
 - returns True
 
-# os.path.splitext(‘/tmp/test.txt’)
+### os.path.splitext(‘/tmp/test.txt’)
 - Splits file route of the path and the extension
 - returns (‘/tmp/test’, ‘.txt’)
 - This is alot easier than parsing out the extension. Splitting off and taking the first value is much better.
