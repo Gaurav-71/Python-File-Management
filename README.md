@@ -5,7 +5,7 @@ Basics of OS module in python and files sorting techniques
 - Corey Schafer : https://www.youtube.com/watch?v=tJxcKyFMTGo
 
 # Notes 
-The OS module allows us to interact wiht the underlying operating system in several different ways.
+The OS module allows us to interact with the underlying operating system in several different ways.
 
 - Navigate the file system
 - Get file information
@@ -54,7 +54,7 @@ os.stat(test.txt)
 
 
 # Access home directory location by grabbing home environment variable
-os.environ.get(‘HOME’). # Returns a path
+os.environ.get(‘HOME’) : Returns a path
 
 # To properly join two files together use os.path.join()
 file_path = os.path.join(os.environ.get(‘HOME’), ‘test.txt’)
