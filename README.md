@@ -16,7 +16,7 @@ The OS module allows us to interact with the underlying operating system in seve
 To begin, import the os module. This is a built in module, no third party modules need to be installed.
 
 
-# Get current working directory
+## Get current working directory
 os.getcwd()
 
 
