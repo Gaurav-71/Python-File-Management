@@ -20,47 +20,47 @@ To begin, import the os module. This is a built in module, no third party module
 os.getcwd()
 
 
-# Change directory, this requires a path to change to
+## Change directory, this requires a path to change to
 os.chdir(path)
 
 
-# List directory, you can pass a path, but by default it is in the current directory
+## List directory, you can pass a path, but by default it is in the current directory
 os.listdir()
 
 
-# Multiple options for creating directories
+## Multiple options for creating directories
 - mkdir() : Use for making one directory
 - makedirs() : Use if you want to create multiple directories at once
 
 
-# Remove directories
+## Remove directories
 - rmdir(file) : Recommended use case
 - removedirs(file) : Removes intermediate directories if specified
 
 
-# Rename a file or folder
+## Rename a file or folder
 os.rename(‘test.txt’, ‘demo.txt’) : This renames text.txt to demo.txt
 
 
-# Look at info about files
+## Look at info about files
 os.stat(test.txt)
  - Useful stat results: st_size (bytes), st_mtime (time stamp), st_ctime (time stamp)
 
 
-# To see entire directory tree and files within
+## To see entire directory tree and files within
 - os.walk is a generator that yields a tuple of 3 values as it walks the directory tree
 - This is useful for locating a file that you can’t remember where it was
 - If you had a web app, and you wanted to keep track of the file info within a certain directory structure, then you could to thru the os.walk method and go thru all files and folders and collect file information.
 
 
-# Access home directory location by grabbing home environment variable
+## Access home directory location by grabbing home environment variable
 os.environ.get(‘HOME’) : Returns a path
 
-# To properly join two files together use os.path.join()
+## To properly join two files together use os.path.join()
 file_path = os.path.join(os.environ.get(‘HOME’), ‘test.txt’)
 - the benefit of os.path.join, is it takes the guess work out of inserting a slash
 
-# os.path has other useful methods
+## os.path has other useful methods
 ### os.path.basename
 - This will grab filename of any path we are working on
 
