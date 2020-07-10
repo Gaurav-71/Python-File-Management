@@ -1,8 +1,9 @@
 # Python-File-Management
-Basics of OS module in python and files sorting techniques
+Basics of os & shutil module in python and files sorting techniques
 
 # Reference
-- Corey Schafer : https://www.youtube.com/watch?v=tJxcKyFMTGo
+- os module : https://www.youtube.com/watch?v=tJxcKyFMTGo
+- shutil : https://www.youtube.com/watch?v=OuD6Euyj_h4
 
 # Notes 
 The OS module allows us to interact with the underlying operating system in several different ways.
